@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- MUITO LEGAL MOVIMENTO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @keyframes movimento {
+            from {
+                left: 0px;
+                top: 0px;            }            
+           to { left: 850px;
+                top: 20px;  }
+        }
+        @keyframes rotacao {
+            0% { transform: rotateX();}
+           100%{transform: rotateX(360deg);}
+        }     
+           
+        #animacao1{
+            width: 250px;
+            height: 250px;
+           background-color: rgba(103, 197, 79, 0.5);
+           border-radius: 25PX;
+           margin-bottom: 30px;    
+           animation-name: movimento;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+            position: relative;
+            float: left;
+        } 
+        #animacao2{
+            width: 350px;
+            height: 350px;
+           background-color: rgba(243, 239, 16, 0.829);
+           border-radius: 25PX;
+           margin-bottom: 30px;    
+           animation-name: rotacao;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-delay: 1s;
+           position: absolute;
+           float: left;
+        } 
+       
+    </style>
+</head>
+<body>
+        <div id= "animacao1">
+             <h1>aaaaa</h1> 
+        </div>
+
+        <div id= "animacao2">
+            <h1>aaaaa</h1> 
+       </div>
+   
+    
+        <div>
+        <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1> 
+        </div>
+  
+
+</body>
+</html>
