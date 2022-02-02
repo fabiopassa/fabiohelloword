@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- MUITO LEGAL MOVIMENTO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @keyframes movimento {
+            from {
+                left: 0px;
+                top: 0px;            }            
+           to { left: 850px;
+                top: 20px;  }
+        }
+        @keyframes rotacao {
+            0% { transform: rotateX();}
+           100%{transform: rotateX(360deg);}
+        }     
+        @keyframes rotacaoz {
+            0% { transform: rotatez();}
+           100%{transform: rotatez(270deg);}
+        }  
+        @keyframes cores {
+            0%{background: radial-gradient(white,rgb(255, 0, 0));}      
+            25%{background: radial-gradient(white,rgb(255, 0, 0),white,rgb(255, 0, 0))}      
+            50%{background: radial-gradient(white,rgb(255, 0, 0),white,rgb(255, 0, 0),white,rgb(255, 0, 0))}      
+            100%{background: radial-gradient(white,rgb(255, 0, 0),white,rgb(255, 0, 0),white,rgb(255, 0, 0),white,rgb(255, 0, 0),white,rgb(255, 0, 0),white,rgb(255, 0, 0))}      
+          
+        }
+        #primeiro100{width: 45%;
+            height: 350px;
+            background-color: rgba(204, 109, 109, 0.616);
+            float: left;}
+             
+
+
+        #animacao1{
+            width: 250px;
+            height: 250px;
+           background-color: rgba(197, 79, 79, 0.699);
+           border-radius: 25PX;
+           margin-bottom: 30px;    
+           animation-name: movimento;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+            position: relative;
+            float: left;
+        } 
+        #animacao2{
+            width: 150px;
+            height: 150px;
+           background-color: rgba(28, 15, 216, 0.829);
+           border-radius: 25PX;
+           margin-bottom: 30px;    
+           animation-name: rotacaoz;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-delay: 1s;
+           position: relative;
+           float: left;
+        } 
+        #animacao3{
+            width: 250px;
+            height: 250px;
+           background-color: rgba(243, 239, 16, 0.829);
+           border-radius: 25PX;
+           margin-bottom: 30px;    
+           animation-name: rotacao;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-delay: 1s;
+           position: relative;
+           float: left;
+        } 
+        #animacao4{
+            width: 150px;
+            height: 150px;
+           background-color: rgb(21, 255, 0);
+           border-radius: 25PX;
+           margin-bottom: 30px;    
+           animation-name: cores;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-delay: 1s;
+           position: relative;
+           ;
+          
+        } 
+       
+    </style>
+</head>
+<body>
+    <div>
+            <div id= "primeiro100">
+                     
+            </div>
+        
+          <div id= "animacao1">
+                   <h1>animação1</h1> 
+          </div>
+
+          <div id= "animacao2">
+            <h1>animação2</h1> 
+          </div>
+
+          <div id= "animacao3">
+                 <h1>animação3</h1> 
+          </div>
+       
+          <div>
+             <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1> 
+          </div>
+          <div>
+              <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1> 
+          </div>
+
+    </div>
+
+    <div id= "animacao4">
+           <h1>animação4</h1> 
+    </div>
+         
+      
+
+</body>
+</html>
